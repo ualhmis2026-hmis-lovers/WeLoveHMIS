@@ -13,7 +13,7 @@ params:
   footer: "Hugo Air Theme is a great responsive theme!"
 
 # Multi-language support
-defaultContentLanguage: fr
+defaultContentLanguage: en
 languages:
   en:
     languageCode: en-GB
