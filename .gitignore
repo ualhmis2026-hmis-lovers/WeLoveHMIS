@@ -1,5 +1,5 @@
 # Hugo build directory
-/public/
+# /public/
 
 # Hugo resources directory (generated during build)
 /resources/
