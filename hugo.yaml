@@ -1,5 +1,5 @@
 # Site Configuration
-baseURL: http://localhost:1313/hugo-air
+baseURL: https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/
 languageCode: en-GB
 title: Hugo Air Theme
 

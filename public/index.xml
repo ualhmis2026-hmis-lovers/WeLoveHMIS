@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Theme Hugo Air on Hugo Air Theme</title>
-    <link>http://localhost:1313/hugo-air/</link>
+    <link>https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/</link>
     <description>Recent content in Theme Hugo Air on Hugo Air Theme</description>
     <generator>Hugo</generator>
     <language>fr-FR</language>
-    <atom:link href="http://localhost:1313/hugo-air/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

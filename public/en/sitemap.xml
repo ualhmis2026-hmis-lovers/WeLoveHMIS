@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/hugo-air/en/categories/</loc>
+    <loc>https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="http://localhost:1313/hugo-air/categories/"
+                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-GB"
-                href="http://localhost:1313/hugo-air/en/categories/"
+                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/hugo-air/en/posts/</loc>
+    <loc>https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/en/posts/</loc>
   </url><url>
-    <loc>http://localhost:1313/hugo-air/en/tags/</loc>
+    <loc>https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="http://localhost:1313/hugo-air/tags/"
+                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-GB"
-                href="http://localhost:1313/hugo-air/en/tags/"
+                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/en/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/hugo-air/en/</loc>
+    <loc>https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="http://localhost:1313/hugo-air/"
+                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-GB"
-                href="http://localhost:1313/hugo-air/en/"
+                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/en/"
                 />
   </url>
 </urlset>
