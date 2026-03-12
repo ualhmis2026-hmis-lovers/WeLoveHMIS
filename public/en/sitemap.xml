@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-GB"
+                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/en/"
+                />
+  </url><url>
     <loc>https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -26,18 +38,6 @@
                 rel="alternate"
                 hreflang="en-GB"
                 href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/en/tags/"
-                />
-  </url><url>
-    <loc>https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/en/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
-                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-GB"
-                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/en/"
                 />
   </url>
 </urlset>
