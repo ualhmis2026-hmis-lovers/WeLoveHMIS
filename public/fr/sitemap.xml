@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/categories/</loc>
+    <loc>https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/fr/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-GB"
-                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-FR"
                 href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/categories/"
                 />
-  </url><url>
-    <loc>https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-GB"
-                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/en/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
+                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/fr/categories/"
+                />
+  </url><url>
+    <loc>https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/fr/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-GB"
                 href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/fr/"
+                />
   </url><url>
-    <loc>https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/tags/</loc>
+    <loc>https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/fr/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-GB"
-                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/en/tags/"
+                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/tags/"
+                href="https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/fr/tags/"
                 />
   </url>
 </urlset>
