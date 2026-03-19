@@ -1,0 +1,32 @@
+name: Deploy Hugo site to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout (con submódulos)
+      uses: actions/checkout@v4
+      with:
+        submodules: true          # ← descarga el tema PaperMod
+        fetch-depth: 0            # ← necesario para fechas de git correctas
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+        extended: true            # ← PaperMod necesita Hugo Extended (para SCSS)
+
+    - name: Build
+      run: hugo --minify
+
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        publish_branch: gh-pages
+        publish_dir: ./public
+        github_token: ${{ secrets.GITHUB_TOKEN }}
