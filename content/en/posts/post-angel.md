@@ -14,4 +14,4 @@ Como no sé qué poner, voy a recomendaros un **vídeo *increíble***:
 Me representa _bastante_.
 
 En fin, yasta, gracias por leer.
-![Alt](/img/keep_calm_and_hmis.jpeg)
+![Alt](/WeLoveHMIS/img/keep_calm_and_hmis.jpeg)
