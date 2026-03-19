@@ -2,17 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/WeLoveHMIS/posts/ejemplo-youtube/</loc>
-    <lastmod>2026-03-19T12:30:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/WeLoveHMIS/posts/</loc>
-    <lastmod>2026-03-19T12:30:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/WeLoveHMIS/posts/post-angel/</loc>
     <lastmod>2026-03-19T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/WeLoveHMIS/posts/mi-primer-post/</loc>
-    <lastmod>2026-03-12T14:13:16+01:00</lastmod>
+    <loc>http://localhost:1313/WeLoveHMIS/posts/</loc>
+    <lastmod>2026-03-19T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/WeLoveHMIS/</loc>
     <lastmod>2026-03-12T00:00:00+00:00</lastmod>
