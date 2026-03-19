@@ -1,5 +1,11 @@
 name: Deploy Hugo site to GitHub Pages
 
+# Give Actions permission to write repository contents and Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 on:
   push:
     branches: [ main ]
@@ -22,7 +28,7 @@ jobs:
         run: hugo --minify
 
       - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           publish_dir: ./public
           publish_branch: gh-pages
