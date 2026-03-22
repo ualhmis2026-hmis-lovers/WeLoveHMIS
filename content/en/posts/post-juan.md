@@ -1,13 +1,17 @@
 ---
 title: "El blog de Juan"
 date: 2026-03-19T12:00:00+01:00
-description: "Mi entrada del blog, entrada super interesante con grandes cosas por venir"
+description: "Mi entrada del blog, entrada super interesante y emocionante"
 ---
 
-![Bienvenidos](/WeLoveHMIS/img/imagen_juan_post_welcome.jpeg)
+![Bienvenidos](/WeLoveHMIS/img/hmis_rok.jpeg)
 
 # Saludos internautas!
 Aquí está mi blog, lo más **esperado** de este año.
+
+Como no se que mas poner por ahora pongo una canción que me gusta:
+
+{{< youtube "D4INE2zO9OU" >}}
 
 
 
