@@ -1,0 +1,13 @@
+.spoiler{border-radius:6px;background:var(--entry);padding:0.5rem}
+.spoiler-summary{cursor:pointer;display:inline-flex;align-items:center;gap:0.5rem}
+.spoiler-summary .chev{transition:transform .2s}
+.spoiler-content{display:none;margin-top:0.5rem}
+.spoiler.open .spoiler-content{display:block}
+.spoiler.open .spoiler-summary .chev{transform:rotate(90deg)}
+.spoiler-summary .label{font-weight:600}
+
+/* Inline spoiler (like Discord) */
+.spoiler-inline{background:var(--entry);padding:0 6px;border-radius:4px;cursor:pointer;color:transparent;filter:blur(0.6px);transition:filter .15s, color .15s}
+.spoiler-inline:hover{filter:blur(0.3px)}
+.spoiler-inline.open{color:inherit;filter:none;background:transparent}
+.spoiler-inline.open:hover{filter:none}
