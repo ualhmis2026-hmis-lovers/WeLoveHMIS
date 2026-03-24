@@ -1,6 +1,7 @@
 ---
 title: "El blog de Jorge"
 date: 2026-03-19T12:00:00+01:00
+author: "jorge"
 description: "No hace falta que hagas clic en verdad."
 ---
 

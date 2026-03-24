@@ -1,0 +1,9 @@
+{{- $size := .Get "size" | default "sm" -}}
+{{- $raw := .Get "raw" | default "" -}}
+{{- if in (slice "xs" "sm" "base" "lg" "xl") $size }}
+<span class="text-{{ $size }}">{{ .Inner }}</span>
+{{- else if ne $raw "" }}
+<span data-fontsize style="font-size:{{ $raw }};">{{ .Inner }}</span>
+{{- else }}
+<span style="font-size:{{ $size }};">{{ .Inner }}</span>
+{{- end -}}

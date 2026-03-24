@@ -1,0 +1,9 @@
+{{- $intensity := .Get "intensity" | default "normal" -}}
+{{- $raw := .Get "raw" | default "" -}}
+{{- $mode := .Get "mode" | default "letters" -}}
+{{- $step := .Get "step" | default "0.09s" -}}
+{{- if ne $raw "" }}
+<span class="dance" style="--dance-translate:{{ $raw }};" data-intensity="{{ $intensity }}" data-mode="{{ $mode }}" data-step="{{ $step }}">{{ .Inner | .Page.RenderString }}</span>
+{{- else }}
+<span class="dance" data-intensity="{{ $intensity }}" data-mode="{{ $mode }}" data-step="{{ $step }}">{{ .Inner | .Page.RenderString }}</span>
+{{- end -}}

@@ -1,0 +1,18 @@
+{{- $open := eq (lower (.Get "open" | default "false")) "true" -}}
+{{- $label := .Get "label" | default "Spoiler" -}}
+{{- $inline := eq (lower (.Get "inline" | default "false")) "true" -}}
+{{- if $inline }}
+<span class="spoiler-inline{{ if $open }} open{{ end }}" role="button" tabindex="0" aria-label="{{ $label }}">
+  {{ .Inner }}
+</span>
+{{- else }}
+<div class="spoiler{{ if $open }} open{{ end }}">
+  <div class="spoiler-summary" role="button" tabindex="0">
+    <svg class="chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    <span class="label">{{ $label }}</span>
+  </div>
+  <div class="spoiler-content">
+    {{ .Inner }}
+  </div>
+</div>
+{{- end }}

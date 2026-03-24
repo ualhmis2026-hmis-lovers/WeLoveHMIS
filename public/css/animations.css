@@ -1,0 +1,50 @@
+/* Dance animation (playful shake/float like "Sans") */
+:root{
+  --dance-translate: 1px;
+  --dance-rotate: 1deg;
+  --dance-duration: 0.9s;
+}
+@keyframes dance-wiggle{
+  0%{transform:translateY(0) rotate(0)}
+  15%{transform:translateY(calc(var(--dance-translate) * -1)) rotate(calc(var(--dance-rotate) * -1))}
+  35%{transform:translateY(calc(var(--dance-translate) * 0.8)) rotate(calc(var(--dance-rotate) * 0.6))}
+  55%{transform:translateY(calc(var(--dance-translate) * -0.6)) rotate(calc(var(--dance-rotate) * -0.4))}
+  75%{transform:translateY(calc(var(--dance-translate) * 0.4)) rotate(calc(var(--dance-rotate) * 0.2))}
+  100%{transform:translateY(0) rotate(0)}
+}
+.dance{display:inline-block;animation: dance-wiggle var(--dance-duration) ease-in-out infinite; transform-origin:center}
+
+/* Ensure child elements don't get their own animations when NOT in letters mode */
+.dance:not([data-mode="letters"]) *{animation: none !important}
+.dance{will-change:transform;white-space:normal}
+
+/* When using per-letter mode, disable the container animation and provide a default step */
+.dance[data-mode="letters"]{animation: none; --step: 0.09s}
+/* intensity modifiers */
+.dance[data-intensity="low"]{--dance-translate:0.5px;--dance-rotate:1deg;--dance-duration:1s}
+.dance[data-intensity="normal"]{--dance-translate:0.5px;--dance-rotate:1deg;--dance-duration:0.5s}
+.dance[data-intensity="high"]{--dance-translate:0.5px;--dance-rotate:1deg;--dance-duration:0.3s}
+/* Respect user's reduced-motion preference */
+@media (prefers-reduced-motion: reduce){
+  .dance{animation: none}
+}
+
+/* Per-letter "snake" animation (Undertale 'Sans' style) */
+@keyframes dance-letter{
+  0%{transform:translateY(0)}
+  25%{transform:translateY(calc(var(--dance-translate) * -1.5))}
+  50%{transform:translateY(0)}
+  75%{transform:translateY(calc(var(--dance-translate) * 1.5))}
+  100%{transform:translateY(0)}
+}
+
+/* Apply when the shortcode sets data-mode="letters" */
+.dance[data-mode="letters"]{display:inline-block}
+.dance[data-mode="letters"] .dance-letter{display:inline-block;line-height:1;animation:dance-letter var(--dance-duration) ease-in-out infinite;animation-delay:calc(var(--i) * var(--step));will-change:transform}
+
+/* Allow step override */
+/* data-step is applied by JS as a CSS custom property (--step) on the container */
+
+@media (prefers-reduced-motion: reduce){
+  .dance[data-mode="letters"] .dance-letter{animation: none}
+}

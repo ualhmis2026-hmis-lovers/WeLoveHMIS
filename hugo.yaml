@@ -16,12 +16,9 @@ params:
     text: "WeLoveHMIS"
     icon: /apple-touch-icon.png
     iconHeight: 35
-  homeInfoParams:
-    Title: "Blog colectivo de HMIS"
-    Content: >
-      Blog colectivo de estudiantes de Ingeniería Informática: artículos, proyectos y reflexiones profesionales.
   ShowReadingTime: true
   ShowToc: true
+  disableSpecial1stPost: true
   TocOpen: true
 
 menu:

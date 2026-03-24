@@ -1,0 +1,7 @@
+.post-author{display:inline-flex;align-items:center;gap:0.5rem}
+.author-avatar{width:32px;height:32px;border-radius:50%;object-fit:cover;display:inline-block;border:2px solid rgba(255,255,255,0.08);vertical-align:middle}
+.author-nick{font-weight:600;font-size:0.95rem;line-height:1}
+/* Ensure meta line (date · readtime · author) stays vertically aligned */
+.post-meta, .entry-footer {display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem}
+.post-meta .post-author, .entry-footer .post-author{display:inline-flex;align-items:center}
+@media (max-width:600px){.author-avatar{width:26px;height:26px}.author-nick{font-size:0.9rem}}

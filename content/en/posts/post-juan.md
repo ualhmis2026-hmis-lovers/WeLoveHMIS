@@ -1,6 +1,7 @@
 ---
 title: "El blog de Juan"
 date: 2026-03-19T12:00:00+01:00
+author: "juan"
 description: "Mi entrada del blog, entrada super interesante y emocionante"
 ---
 
