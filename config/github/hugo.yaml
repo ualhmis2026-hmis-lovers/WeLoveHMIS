@@ -1,11 +1,4 @@
-# Hugo Configuration
-# Environment-specific configs are in config/ directory:
-#   - config/_default/    : Shared configuration
-#   - config/azure/       : Azure Static Web Apps (root domain)
-#   - config/github/      : GitHub Pages (with /WeLoveHMIS/ subfolder)
-#
-# Use with: hugo --config config/azure  or  hugo --config config/github
-
+baseURL: "https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/"
 languageCode: es-ES
 title: WeLoveHMIS
 theme: PaperMod

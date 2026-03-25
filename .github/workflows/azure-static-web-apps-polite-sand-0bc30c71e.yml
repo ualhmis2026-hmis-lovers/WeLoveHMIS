@@ -23,28 +23,8 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.157.0'
-      - name: Build site for Static Web Apps
-        run: hugo --minify --baseURL "https://polite-sand-0bc30c71e.azurestaticapps.net/" --environment production
-      - name: Mirror legacy paths for GitHub Pages layout
-        run: |
-          # Some templates generate URLs with /WeLoveHMIS/ prefix (GitHub Pages).
-          # Create mirrored folders so both / and /WeLoveHMIS/ paths work on Static Web Apps.
-          set -e
-          if [ -d public ]; then
-            mkdir -p public/WeLoveHMIS
-            for d in img css js assets; do
-              if [ -d "public/$d" ]; then
-                mkdir -p "public/WeLoveHMIS/$d"
-                cp -r "public/$d/." "public/WeLoveHMIS/$d/" || true
-              fi
-            done
-            # Copy root-level static files if present
-            for f in favicon.ico apple-touch-icon.png favicon-16x16.png favicon-32x32.png safari-pinned-tab.svg; do
-              if [ -f "public/$f" ]; then
-                cp "public/$f" "public/WeLoveHMIS/$f" || true
-              fi
-            done
-          fi
+      - name: Build site for Azure Static Web Apps
+        run: hugo --minify --config config/azure --environment production
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
