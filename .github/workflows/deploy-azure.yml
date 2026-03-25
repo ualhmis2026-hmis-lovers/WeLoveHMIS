@@ -21,7 +21,7 @@ jobs:
           hugo-version: ${{ env.HUGO_VERSION }}
 
       - name: Build site
-        run: hugo --minify --baseURL "${{ env.HUGO_BASE_URL }}"
+        run: hugo --minify --baseURL "https://hmis-lovers-c4fqd8ekf5fec4gs.canadacentral-01.azurewebsites.net/"
  
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
