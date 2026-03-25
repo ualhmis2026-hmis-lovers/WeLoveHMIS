@@ -32,3 +32,10 @@ outputs:
     - HTML
     - RSS
     - JSON
+
+menu:
+  main:
+    - identifier: contact
+      name: "Contacto"
+      url: "/en/contact/"
+      weight: 10

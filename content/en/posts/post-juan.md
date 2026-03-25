@@ -5,6 +5,10 @@ author: "juan"
 description: "Mi entrada del blog, entrada super interesante y emocionante"
 ---
 
+{{< dance intensity="low" step="0.03s" >}}
+[Enlace a mi GitHub](https://github.com/ualjem852)
+{{< /dance >}}
+
 ![Bienvenidos](/WeLoveHMIS/img/hmis_rok.jpeg)
 
 # Saludos internautas!

@@ -1,0 +1,17 @@
+/* Simple styles for contact form */
+.contact-form{max-width:720px;margin:1.5rem auto;padding:1rem;background:var(--entry);border-radius:8px}
+.contact-form label{display:block;font-weight:600;margin-top:.75rem}
+.contact-form input,.contact-form textarea{width:100%;padding:.5rem;margin-top:.25rem;border:1px solid rgba(255,255,255,0.06);border-radius:6px;background:transparent;color:inherit}
+.contact-form button{margin-top:1rem;padding:.6rem 1rem;border-radius:6px;border:0;background:var(--accent);color:var(--accent-foreground);cursor:pointer}
+.contact-status{margin-top:0.75rem;font-size:.95rem}
+.contact-form .muted{font-size:.9rem;color:#9a9a9a}
+
+/* status styles */
+.contact-status.success{color:var(--success, #1b9a59)}
+.contact-status.error{color:var(--danger, #d9534f)}
+
+.contact-form button[disabled]{opacity:0.6;cursor:wait}
+
+@media (prefers-reduced-motion: reduce){
+  .contact-form button{transition:none}
+}

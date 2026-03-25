@@ -30,5 +30,12 @@
       <guid>http://localhost:1313/WeLoveHMIS/en/posts/post-juan/</guid>
       <description>Mi entrada del blog, entrada super interesante y emocionante</description>
     </item>
+    <item>
+      <title>Contacto</title>
+      <link>http://localhost:1313/WeLoveHMIS/en/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/WeLoveHMIS/en/contact/</guid>
+      <description>Dinos algo!</description>
+    </item>
   </channel>
 </rss>
