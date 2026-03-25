@@ -25,7 +25,7 @@ jobs:
           hugo-version: '0.157.0'
 
       - name: Build site
-        run: hugo --minify --config config/github
+        run: hugo --minify --baseURL "https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/" --environment production
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4

@@ -24,7 +24,7 @@ jobs:
         with:
           hugo-version: '0.157.0'
       - name: Build site for Azure Static Web Apps
-        run: hugo --minify --config config/azure --environment production
+        run: hugo --minify --baseURL "https://polite-sand-0bc30c71e.azurestaticapps.net/" --environment production
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
