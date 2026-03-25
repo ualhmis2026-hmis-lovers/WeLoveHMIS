@@ -9,7 +9,7 @@ description: "Mi entrada del blog, entrada super interesante y emocionante"
 [Enlace a mi GitHub](https://github.com/ualjem852)
 {{< /dance >}}
 
-![Bienvenidos](img/hmis_rok.jpeg)
+![Bienvenidos](/img/hmis_rok.jpeg)
 
 # Saludos internautas!
 Aquí está mi blog, lo más **esperado** de este año.

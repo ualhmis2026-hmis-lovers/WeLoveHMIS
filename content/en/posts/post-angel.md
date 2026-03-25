@@ -36,4 +36,4 @@ Supongo que eso es todo, para terminar les traigo una pequeña reflexión:
 
 # todo lo bueno tiene un final y aunque esto no sea bueno pues también tendrá que tener un final no? hombre digo yo que sí ya está bien
 En fin, yasta, gracias por leer. {{< dance intensity="low" step="0.03s" >}}KEEP CALM AND HMIS.{{< /dance >}}
-![Alt](img/keep_calm_and_hmis.jpeg)
+![Alt](/img/keep_calm_and_hmis.jpeg)
