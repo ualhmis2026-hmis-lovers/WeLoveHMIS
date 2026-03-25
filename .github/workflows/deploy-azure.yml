@@ -8,7 +8,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     env:
-      HUGO_BASE_URL: "https://ualhmis2026-hmis-lovers.github.io/WeLoveHMIS/"
+      HUGO_BASE_URL: "https://hmis-lovers-c4fqd8ekf5fec4gs.canadacentral-01.azurewebsites.net/"
       HUGO_VERSION: '0.157.0'
 
     steps:
