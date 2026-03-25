@@ -40,10 +40,9 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           # We already build Hugo in a previous step; skip Oryx build and upload the prebuilt 'public' folder.
           skip_app_build: true
-          app_location: "." # App source code path (root)
+          app_location: "public" # The built app content directory from Hugo
           api_location: "" # Api source code path - optional
-          output_location: "public" # Built app content directory (kept for reference)
-          app_artifact_location: "public" # Artifact folder to upload when skip_app_build is true
+          output_location: "public" # Built app content directory
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
