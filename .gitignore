@@ -7,11 +7,14 @@ index.html
 index.xml
 index.json
 sitemap.xml
-en/
-fr/
-posts/
-tags/
-categories/
+/en/
+/fr/
+/posts/
+/tags/
+/categories/
+
+# Allow content directory (where authors create posts)
+!content/
 
 # OS
 .DS_Store
