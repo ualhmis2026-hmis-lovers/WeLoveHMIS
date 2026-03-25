@@ -1,0 +1,49 @@
+name: Deploy to VM
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Deploy to VM
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /var/www/WeLoveHMIS
+            
+            # Pull últimos cambios
+            git pull origin main
+            
+            # Instalar Hugo si no existe
+            if ! command -v hugo &> /dev/null; then
+              cd /tmp
+              wget -q https://github.com/gohugoio/hugo/releases/download/v0.157.0/hugo_extended_0.157.0_linux-amd64.tar.gz
+              tar -xzf hugo_extended_0.157.0_linux-amd64.tar.gz
+              sudo mv hugo /usr/local/bin/
+              cd /var/www/WeLoveHMIS
+            fi
+            
+            # Construir site
+            hugo --minify --baseURL "panconjamon.westus2.cloudapp.azure.com"
+            
+            # Copiar built files a nginx
+            sudo cp -r public/* /var/www/html/
+            sudo chown -R www-data:www-data /var/www/html
+            
+            # Recargar nginx
+            sudo systemctl reload nginx
+            
+            echo "✅ Deploy completado!"
