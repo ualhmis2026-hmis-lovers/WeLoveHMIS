@@ -24,11 +24,14 @@ jobs:
           script: |
             cd /var/www/WeLoveHMIS
             
-            # Pull últimos cambios
-            git pull origin main
+            # Sync con repositorio remoto (fuerza sincronización)
+            git fetch origin main
+            git reset --hard origin/main
+            git clean -fd
             
             # Instalar Hugo si no existe
             if ! command -v hugo &> /dev/null; then
+              echo "Instalando Hugo..."
               cd /tmp
               wget -q https://github.com/gohugoio/hugo/releases/download/v0.157.0/hugo_extended_0.157.0_linux-amd64.tar.gz
               tar -xzf hugo_extended_0.157.0_linux-amd64.tar.gz
@@ -36,8 +39,17 @@ jobs:
               cd /var/www/WeLoveHMIS
             fi
             
+            # Limpiar build anterior
+            rm -rf public/
+            
             # Construir site
-            hugo --minify --baseURL "panconjamon.westus2.cloudapp.azure.com"
+            hugo --minify --baseURL "https://panconjamon.westus2.cloudapp.azure.com/"
+            
+            # Validar que se generó
+            if [ ! -d "public" ]; then
+              echo "❌ Error: Hugo no generó el directorio public/"
+              exit 1
+            fi
             
             # Copiar built files a nginx
             sudo cp -r public/* /var/www/html/
