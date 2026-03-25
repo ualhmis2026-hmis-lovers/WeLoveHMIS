@@ -22,7 +22,7 @@ jobs:
 
       - name: Build site
         run: hugo --minify --baseURL "${{ env.HUGO_BASE_URL }}"
-
+ 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
