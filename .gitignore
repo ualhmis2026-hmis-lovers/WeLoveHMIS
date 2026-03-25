@@ -2,6 +2,17 @@
 public/
 resources/
 
+# Generated root files (should only be in public/)
+index.html
+index.xml
+index.json
+sitemap.xml
+en/
+fr/
+posts/
+tags/
+categories/
+
 # OS
 .DS_Store
 Thumbs.db
