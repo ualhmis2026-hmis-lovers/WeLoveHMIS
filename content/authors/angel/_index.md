@@ -1,7 +1,7 @@
 ---
 title: "Ángel"
 nick: "Ángel"
-avatar: "/WeLoveHMIS/img/angel.png"
+avatar: "/img/angel.png"
 ---
 
 Estudiante y autor principal de algunas entradas.

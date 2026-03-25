@@ -10,7 +10,7 @@
 		{{- $author }}
 	{{- else }}
 		{{- $nick := $ap.Params.nick | default $ap.Title -}}
-		{{- $avatar := $ap.Params.avatar | default (print "/WeLoveHMIS/img/" (lower $author_slug) ".jpeg") -}}
+		{{- $avatar := $ap.Params.avatar | default (print "/img/" (lower $author_slug) ".png") -}}
 		{{- $avatarURL := $avatar | absURL -}}
 		{{- $safeNick := $nick -}}
 		{{- printf "<span class=\"post-author\"><img src=\"%s\" alt=\"%s\" class=\"author-avatar\"/> <span class=\"author-nick\">%s</span></span>" $avatarURL $safeNick $safeNick | safeHTML -}}
