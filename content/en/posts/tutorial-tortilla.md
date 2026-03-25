@@ -101,8 +101,6 @@ Vuelca la tortilla de nuevo a la sartén (la parte que no estaba) y déjalo otro
 Y aquí termina nuestro viaje. Saca la tortilla, sírvela, come, y reza por que no esté completamente cruda por dentro.
 
 
-*(Este vídeo no tiene nada que ver con tortillas, es solo para que veas mi estado mental mientras escribía esto)*
-
 ## Reflexión final
 
 Una tortilla es **responsabilidad**, es **compromiso**, es learning by doing. Y si falla, siempre te queda la pizza congelada del Mercadona.
