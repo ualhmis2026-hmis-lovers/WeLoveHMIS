@@ -46,7 +46,7 @@ jobs:
             rm -rf public/
             
             # Construir site
-            hugo --minify --baseURL "https://panconjamon.westus2.cloudapp.azure.com/"
+            hugo --minify --baseURL "http://panconjamon.westus2.cloudapp.azure.com/"
             
             # Validar que se generó
             if [ ! -d "public" ]; then
