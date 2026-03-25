@@ -18,4 +18,4 @@ Como no sé qué poner, voy soltar un **vídeo *por aquí***:
 Por si esto no te _representa_ mucho, lo siento.
 
 En fin, yasta jeje, gracias por leer.
-![fotillo](../../img/how_i_sleep_knowing_i_love_hmis.jpeg)
+![fotillo](../../../img/how_i_sleep_knowing_i_love_hmis.jpeg)
